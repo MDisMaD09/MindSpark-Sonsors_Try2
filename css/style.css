@@ -6,7 +6,7 @@ body {
   background-color: #161418;
   color: #eee;
   user-select: none;
-  background-image: url(../assets/images/background.gif);
+  /* background-image: url(../assets/images/background.gif); */
 }
 
 .headContainer{
@@ -142,4 +142,15 @@ code {
 
 .event p {
   margin-right:69px;
+}
+
+
+#gradient-canvas {
+  position: fixed;
+  min-height: 100vh;
+  z-index: -1;
+  --gradient-color-1: #00eaff;
+  --gradient-color-2: #3d3d3d;
+  --gradient-color-3: #000000;
+  --gradient-color-4: #1d002b;
 }
