@@ -20,53 +20,75 @@
 
   <body>
     <canvas id="gradient-canvas" data-js-darken-top data-transition-in></canvas>
-    <div class="headContainer">
-      <div class="sponsors">
-        <div class="main">
-          <img class="tokenImage" src="./assets/images/title.png" alt="Title Sponsor" />
-          <h2>Crif India</h2>
-          <p class="description">Title Sponsor</p>
-          <hr />
-          <div class="creator">
-            <div class="wrapper">
-              <img src="./assets/images/MindSparkLogo.jpg" alt="Creator" />
-            </div>
-            <div class="tokenInfo">
-              <div class="event">
-                <p>MindSpark</p>
-              </div>
-              <div class="duration">
-                <ins>◷</ins>
-                <p>2022</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="sponsors">
-        <div class="main">
-          <img class="tokenImage" src="./assets/images/title.png" alt="Chief Sponsor" />
-          <h2>TATA</h2>
-          <p class="description">Chief Sponsor</p>
-          <hr />
-          <div class="creator">
-            <div class="wrapper">
-              <img src="./assets/images/MindSparkLogo.jpg" alt="Creator" />
-            </div>
-            <div class="tokenInfo">
-              <div class="event">
-                <p>MindSpark</p>
+      <script>
+
+        const tata
+         = {
+          title: "CRIF India",
+          description: "Title Sponsor",
+          sponsorImageSrc: "./assets/images/title.png",
+          creatorImageSrc: "./assets/images/MindSparkLogo.jpg",
+          event: "MindSpark",
+          year: "2022",
+        };
+
+        const chiefSponsor = {
+          title: "Chief Sponsor",
+          description: "Chief Sponsor Description",
+          sponsorImageSrc: "./assets/images/chief.png",
+          creatorImageSrc: "./assets/images/MindSparkLogo.jpg",
+          event: "MindSpark",
+          year: "2022",
+        };
+
+        function createSponsorCard(sponsor) {
+          document.write(`
+            <div class="sponsors">
+              <div class="main">
+                <img class="tokenImage" src="${sponsor.sponsorImageSrc}" alt="${sponsor.title} Sponsor" />
+                <h2>${sponsor.title}</h2>
+                <p class="description">${sponsor.description}</p>
+                <hr />
+                <div class="creator">
+                  <div class="wrapper">
+                    <img src="${sponsor.creatorImageSrc}" alt="Creator" />
+                  </div>
+                  <div class="tokenInfo">
+                    <div class="event">
+                      <p>${sponsor.event}</p>
+                    </div>
+                    <div class="duration">
+                      <ins>◷</ins>
+                      <p>${sponsor.year}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="duration">
-                <ins>◷</ins>
-                <p>2022</p>
-              </div>
             </div>
-          </div>
+            `);
+        }
+      </script>
+      <div class="sponsor-cols" style="display: flexbox;">
+        <div class="sponsor-col-1" style="display: flex;">
+          <script>
+            createSponsorCard(tata);
+          </script>
+        </div>
+        <div class="sponsor-col-1" style="display: flex;">
+          <script>
+            createSponsorCard(tata);
+            createSponsorCard(tata); 
+          </script>
+        </div>
+        <div class="sponsor-col-1" style="display: flex;">
+          <script>
+            createSponsorCard(tata);
+            createSponsorCard(tata);
+            createSponsorCard(tata);
+          </script>
         </div>
       </div>
-    </div>
     <script src="./gradient.js"></script>
   </body>
 

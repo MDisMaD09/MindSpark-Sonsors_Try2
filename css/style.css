@@ -10,8 +10,8 @@ body {
 }
 
 .headContainer{
-	display: flex;
-	flex-direction: row;
+	/* display: flex;
+	flex-direction: row; */
 	align-items: center;
 	justify-content: center;
 }
