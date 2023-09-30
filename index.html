@@ -23,47 +23,50 @@
 
       <script>
 
-        const tata
+        const temporary
          = {
-          title: "CRIF India",
+          title: "Name of Sponsor",
+          description: "Description of Sponsor",
+          sponsorImageSrc: "./assets/images/output-onlinepngtools.png",
+        };
+        const title
+         = {
+          title: "Name of Sponsor",
           description: "Title Sponsor",
-          sponsorImageSrc: "./assets/images/title.png",
-          creatorImageSrc: "./assets/images/MindSparkLogo.jpg",
-          event: "MindSpark",
-          year: "2022",
+          sponsorImageSrc: "./assets/images/output-onlinepngtools.png",
         };
 
-        const chiefSponsor = {
-          title: "Chief Sponsor",
-          description: "Chief Sponsor Description",
-          sponsorImageSrc: "./assets/images/chief.png",
-          creatorImageSrc: "./assets/images/MindSparkLogo.jpg",
-          event: "MindSpark",
-          year: "2022",
+        const walter = {
+          description: "Associate Sponsor",
+          title: "Walter P Moore",
+          sponsorImageSrc: "./assets/images/walterpmoore_logo.svg",  
         };
+
+        const whirlpool = {
+          description: "Associate Sponsor",
+          title: "WhirlPool",
+          sponsorImageSrc: "./assets/images/whirlpool.png",  
+        };
+
+        const autodesk = {
+          description: "Associate Sponsor",
+          title: "Autodesk",
+          sponsorImageSrc: "./assets/images/Associate2.png",  
+        };
+
+        
 
         function createSponsorCard(sponsor) {
           document.write(`
             <div class="sponsors">
               <div class="main">
+                <div class="logoimg">
                 <img class="tokenImage" src="${sponsor.sponsorImageSrc}" alt="${sponsor.title} Sponsor" />
+                </div>
                 <h2>${sponsor.title}</h2>
+                <hr />
                 <p class="description">${sponsor.description}</p>
                 <hr />
-                <div class="creator">
-                  <div class="wrapper">
-                    <img src="${sponsor.creatorImageSrc}" alt="Creator" />
-                  </div>
-                  <div class="tokenInfo">
-                    <div class="event">
-                      <p>${sponsor.event}</p>
-                    </div>
-                    <div class="duration">
-                      <ins>◷</ins>
-                      <p>${sponsor.year}</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
             `);
@@ -72,20 +75,20 @@
       <div class="sponsor-cols" style="display: flexbox;">
         <div class="sponsor-col-1" style="display: flex;">
           <script>
-            createSponsorCard(tata);
+            createSponsorCard(title);
           </script>
         </div>
         <div class="sponsor-col-1" style="display: flex;">
           <script>
-            createSponsorCard(tata);
-            createSponsorCard(tata); 
+            createSponsorCard(walter);
+            createSponsorCard(whirlpool); 
+            createSponsorCard(autodesk);
           </script>
         </div>
         <div class="sponsor-col-1" style="display: flex;">
           <script>
-            createSponsorCard(tata);
-            createSponsorCard(tata);
-            createSponsorCard(tata);
+            createSponsorCard(temporary);
+            createSponsorCard(temporary);
           </script>
         </div>
       </div>
