@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -138,4 +138,12 @@ code {
   --gradient-color-2: #3d3d3d;
   --gradient-color-3: #000000;
   --gradient-color-4: #1d002b;
+}
+.sponsor-col-1 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 50px;
 }
