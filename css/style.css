@@ -24,9 +24,9 @@ code {
   user-select: none;
   max-width: 300px;
   margin: 5rem auto;
-  border: 1px solid #ffffff22;
+  /* border: 1px solid #ffffff22; */
   background-color: #282c34;
-  background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
+  background: linear-gradient(0deg, #263860 0%, rgba(239, 236, 241, 0.5) 100%);
   box-shadow: 0 7px 20px 5px #00000088;
   border-radius: 0.7rem;
   backdrop-filter: blur(7px);
@@ -110,7 +110,7 @@ code {
   transition: 0.7s all;
 }
 .sponsors:hover {
-  border: 1px solid #ffffff44;
+  /* border: 1px solid #ffffff44; */
   box-shadow: 0 7px 50px 10px #000000aa;
   transform: scale(1.015);
   filter: brightness(1.3);
