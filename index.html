@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <title>Mindspark</title>
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-  <!DOCTYPE html>
-  <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MindSpark'22 Sponsors</title>
+    <title>Mindspark</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <canvas id="gradient-canvas" data-js-darken-top data-transition-in></canvas>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MindSpark'22 Sponsors</title>
+      </head>
 
-      <script>
+      <body>
+        <canvas
+          id="gradient-canvas"
+          data-js-darken-top
+          data-transition-in
+        ></canvas>
 
-        const temporary
-         = {
-          title: "Name of Sponsor",
-          description: "Description of Sponsor",
-          sponsorImageSrc: "./assets/images/output-onlinepngtools.png",
-        };
-        const title
-         = {
-          title: "Name of Sponsor",
-          description: "Title Sponsor",
-          sponsorImageSrc: "./assets/images/output-onlinepngtools.png",
-        };
+        <script>
+          const temporary = {
+            title: "Name of Sponsor",
+            description: "Description of Sponsor",
+            sponsorImageSrc: "./assets/images/output-onlinepngtools.png",
+          };
+          const title = {
+            title: "Name of Sponsor",
+            description: "Title Sponsor",
+            sponsorImageSrc: "./assets/images/output-onlinepngtools.png",
+          };
 
-        const walter = {
-          description: "Associate Sponsor",
-          title: "Walter P Moore",
-          sponsorImageSrc: "./assets/images/walterpmoore_logo.svg",  
-        };
+          const walter = {
+            description: "Associate Sponsor",
+            title: "Walter P Moore",
+            sponsorImageSrc: "./assets/images/walterpmoore_logo.svg",
+          };
 
-        const whirlpool = {
-          description: "Associate Sponsor",
-          title: "WhirlPool",
-          sponsorImageSrc: "./assets/images/whirlpool.png",  
-        };
+          const whirlpool = {
+            description: "Associate Sponsor",
+            title: "WhirlPool",
+            sponsorImageSrc: "./assets/images/whirlpool.png",
+          };
 
-        const autodesk = {
-          description: "Associate Sponsor",
-          title: "Autodesk",
-          sponsorImageSrc: "./assets/images/Associate2.png",  
-        };
+          const autodesk = {
+            description: "Associate Sponsor",
+            title: "Autodesk",
+            sponsorImageSrc: "./assets/images/Associate2.png",
+          };
 
-        
-
-        function createSponsorCard(sponsor) {
-          document.write(`
+          function createSponsorCard(sponsor) {
+            document.write(`
             <div class="sponsors">
               <div class="main">
                 <div class="logoimg">
@@ -70,29 +67,40 @@
               </div>
             </div>
             `);
-        }
-      </script>
-      <div class="sponsor-cols" style="display: flexbox;">
-        <div class="sponsor-col-1" style="display: flex;">
-          <script>
-            createSponsorCard(title);
-          </script>
+          }
+        </script>
+        <div class="headContainer">
+          <div class="msLogo">
+            <a href="https://www.mind-spark.org/"
+              ><img src="./assets/images/logo.png" alt="logo"
+            /></a>
+          </div>
         </div>
-        <div class="sponsor-col-1" style="display: flex;">
-          <script>
-            createSponsorCard(walter);
-            createSponsorCard(whirlpool); 
-            createSponsorCard(autodesk);
-          </script>
+        <div class="headContainer">
+          <h1>Meet Our Sponsors</h1>
         </div>
-        <div class="sponsor-col-1" style="display: flex;">
-          <script>
-            createSponsorCard(temporary);
-            createSponsorCard(temporary);
-          </script>
+        <div class="sponsor-cols" style="display: flexbox">
+          <div class="sponsor-col-1" style="display: flex">
+            <script>
+              createSponsorCard(title);
+            </script>
+          </div>
+          <div class="sponsor-col-1" style="display: flex">
+            <script>
+              createSponsorCard(walter);
+              createSponsorCard(whirlpool);
+              createSponsorCard(autodesk);
+            </script>
+          </div>
+          <div class="sponsor-col-1" style="display: flex">
+            <script>
+              createSponsorCard(temporary);
+              createSponsorCard(temporary);
+            </script>
+          </div>
         </div>
-      </div>
-    <script src="./gradient.js"></script>
+        <script src="./gradient.js"></script>
+      </body>
+    </html>
   </body>
-
-  </html>
+</html>
