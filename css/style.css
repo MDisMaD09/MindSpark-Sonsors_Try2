@@ -170,4 +170,10 @@ code {
     padding: 50px 10px 10px 10px;
 		font-size: 50px;
   }
+  .msLogo img{
+		margin-left: 30px;
+		text-align: center;
+		width: 350px;
+		height: 90px;
+	}
 }
